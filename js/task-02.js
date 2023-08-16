@@ -13,3 +13,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ulList = document.querySelector('#ingredients');
+
+ingredients.forEach(ingredient => {
+  const liEl = document.createElement('li');
+  liEl.textContent = ingredient;
+  liEl.classList.add('item');
+  ulList.appendChild(liEl);
+});
